@@ -1,0 +1,33 @@
+
+<div class="row col-6">
+        <form name="formdatos"  class="col-12">
+        <div class="form-group">
+            
+            <label for="vi">Nivel de confianza</label>
+            <input value="95" type="number" class="form-control" name="nivel" id="nivel" aria-describedby="helpId"
+                placeholder="Ingrese nivel de confianza. ">
+            <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+        </div>
+        
+        <b>PRUEBAS</b> <br>
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link" onclick="PruebaMedia()" id="v-pills-profile-tab" data-toggle="pill"
+        href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">PRUEBA DE MEDIAS</a>
+        <a class="nav-link" onclick="PruebaVarianza()" id="v-pills-messages-tab" data-toggle="pill"
+        href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">PRUEBA DE VARIANZA</a>
+        <a class="nav-link" onclick="PruebaChiCuadrada()" id="v-pills-settings-tab" data-toggle="pill"
+        href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">PRUEBA DE CHI-CUADRADA</a>
+    </div>    
+    </form>
+    </div>
+    <div class="row col-6">
+            <div class="row mt-3">
+                    <table class="table table-dark">
+                        
+                        <tbody id="resultados">
+    
+                        </tbody>
+                    </table>
+                </div>
+        
+    </div>

@@ -1,0 +1,49 @@
+
+
+    <div class="row col-12">
+        <form name="formdatos" class="col-3">
+
+            <div class="form-group">
+                <label for="vi">Ingrese X0</label>
+                <input value="1293" type="number" class="form-control" name="vi" id="vi" aria-describedby="helpId"
+                    placeholder="Ingrese variable inicial Xo">
+            </div>
+
+            <div class="form-group">
+                <label for="m">Ingrese M</label>
+                <input value="86" type="number" class="form-control" name="m" id="m" aria-describedby="helpId"
+                    placeholder="Ingrese variable inicial Xo">
+            </div>
+
+            <div class="form-group">
+                <label for="cantidad">CANTIDAD::</label>
+                <input value="5" type="text" class="form-control" name="cantidad" id="cantidad"
+                    aria-describedby="helpId" placeholder="Cantidad de numeros a generar">
+            </div>
+        </form>
+
+        <div class="col-8">
+            <div>
+                <button class="btn btn-primary" type="button" name="calcular" onclick="metodo7()">CALCULAR</button>
+                <button class="btn btn-primary" type="button" name="calcular" onclick="Guardar()">EXPORTAR</button>
+                <button class="btn btn-primary" type="button"  onclick="cargarmetodo('pruebas.html')">PRUEBAS</button>
+           
+            </div>
+            <!-- mostrar el resultado -->
+            <div class="row mt-3">
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th>Xi</th>
+                            <th>N</th>
+                            <th>Ri</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultados">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+

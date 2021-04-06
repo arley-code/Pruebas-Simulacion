@@ -1,0 +1,66 @@
+
+
+  <div class="row col-12">
+    <form name="formdatos" class="col-6">
+      <div class="form-group">
+        <label for="a">Ingrese A::</label>
+        <input value="" type="number" class="form-control" name="a" id="a" aria-describedby="helpId"
+          placeholder="ingresa la variable A">
+        <!-- <small id="helpId" class="form-text text-muted">Variable A</small> -->
+      </div>
+      <div class="form-group">
+        <label for="b">Ingrese B::</label>
+        <input value="" type="number" class="form-control" name="b" id="b" aria-describedby="helpId"
+          placeholder="Ingrese la variable B">
+        <!-- <small id="helpId" class="form-text text-muted">Variable B</small> -->
+      </div>
+      <div class="form-group">
+        <label for="vc">Ingrese C::</label>
+        <input value="" type="number" class="form-control" name="vc" id="vc" aria-describedby="helpId"
+          placeholder="Ingrese la variable C">
+        <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+      </div>
+      <div class="form-group">
+        <label for="m">Ingrese M::</label>
+        <input value="" type="number" class="form-control" name="m" id="m" aria-describedby="helpId"
+          placeholder="Ingrese la variable M">
+        <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+      </div>
+      <div class="form-group">
+        <label for="vi">Ingrese X0</label>
+        <input value="" type="number" class="form-control" name="vi" id="vi" aria-describedby="helpId"
+          placeholder="Ingrese variable inicial Xo">
+        <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+      </div>
+      <div class="form-group">
+        <label for="cantidad">CANTIDAD::</label>
+        <input type="text" class="form-control" name="cantidad" id="cantidad" aria-describedby="helpId"
+          placeholder="Cantidad de numeros a generar">
+        <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+      </div>
+    </form>
+
+    <div class="col-6">
+      <div>
+        <button class="btn btn-primary" type="button" name="calcular" onclick="prueba()">CALCULAR</button>
+        <button class="btn btn-primary" type="button" name="calcular" onclick="Guardar()">EXPORTAR</button>
+        <button class="btn btn-primary" type="button"  onclick="cargarmetodo('pruebas.html')">PRUEBAS</button>
+           
+      </div>
+      <!-- mostrar el resultado -->
+      <div>
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th>Xi</th>
+              <th>N</th>
+              <th>Ri</th>
+            </tr>
+          </thead>
+          <tbody id="resultados">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
